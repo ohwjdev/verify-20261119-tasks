@@ -1,0 +1,49 @@
+schema_version: 3
+campaign:
+  name: "verify-20261119-tasks"
+  title: "Verify tasks step"
+  description: ""
+  instigator: "297915765"
+  repo_id: 1464178263
+  language: "en"
+  license: "CC-BY-4.0"
+automation:
+  central_repository: "lets-encode/lets-encode"
+  ref: "develop"
+  path: "scripts/coordinator.ts"
+source:
+  kind: "facsimile"
+  images:
+    - "sources/img/01.jpg"
+    - "sources/img/02.jpg"
+    - "sources/img/03.jpg"
+    - "sources/img/04.jpg"
+  header:
+    title: ""
+    composer: ""
+    publisher: ""
+    date: ""
+  rights_acknowledged: "1"
+pieces:
+  - id: "piece-01"
+    kind: "facsimile"
+    preparation: "omr-instruments"
+    path: "sources/piece-01/score.mei"
+    zones:
+      - { surface: 1, ulx: 0, uly: 0, lrx: 6762, lry: 10000 }
+      - { surface: 2, ulx: 0, uly: 0, lrx: 6762, lry: 10000 }
+      - { surface: 3, ulx: 0, uly: 0, lrx: 6762, lry: 10000 }
+      - { surface: 4, ulx: 0, uly: 0, lrx: 6762, lry: 10000 }
+    header:
+      title: ""
+      composer: ""
+fragmentation:
+  strategy: "by-piece"
+  division: "none"
+validation:
+  required_validations: 2
+  pass_threshold: 2
+  allow_self_validation: true
+locking:
+  stale_after_minutes: 1440
+  max_claims_per_person: 10
